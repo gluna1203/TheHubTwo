@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/gluna1203/TheHubTwo#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "pug": "^3.0.2"
   }
 }
