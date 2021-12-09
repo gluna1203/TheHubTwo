@@ -2,6 +2,7 @@ const express = require('express');
 const pug = require('pug');
 const path = require('path');
 const routes = require('./routes/routes');
+const port = process.env.PORT || 3001;
 
 const app = express();
 
@@ -30,4 +31,4 @@ app.get('/details/:id', routes.details);
 
 app.get('/api', routes.api);
 
-app.listen(3001);
+app.listen(port);
