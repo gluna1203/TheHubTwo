@@ -1,3 +1,15 @@
+const express = require('express');
+const pug = require('pug');
+const path = require('path');
+const routes = require('./routes/routes.js');
+const port = process.env.PORT || 3001;
+
+const app = express();
+
+app.set('view engine', 'pug');
+app.set('views', __dirname + "/views");
+app.use(express.static(path.join(__dirname, '/public')));
+
 $(function () {
     var apikey = '0658a8fe82c53e670195aebff0c9c3e6';
     var city = "Salt Lake City, UT, US";
