@@ -1,7 +1,8 @@
 const e = require('express');
 const { MongoClient, ObjectId }= require('mongodb')
 
-const url = 'mongodb://localhost:27017';
+// const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://ADMIN:Neumont@thehubusers.2xiyk.mongodb.net/myData?retryWrites=true&w=majority';
 const client = new MongoClient(url);
 
 const dbName = 'myData';
