@@ -1,0 +1,24 @@
+extends layout 
+
+block content 
+    table(class='gridtable')
+        tr 
+            th id 
+            th Category 
+            th Joke 
+            th Answer 
+            th 
+            th 
+        each item in joke 
+            tr 
+                td 
+                    a(href='/details/' + item._id) #{item._id}
+                td #{item.category} 
+                td #{item.jokeString}
+                td #{item.jokeAnswer}
+                td 
+                    a(href='/edit/' + item._id) Edit 
+                td 
+                    a(href='/delete/' + item._id) Delete
+    p
+        a(href='/create') Add new Joke

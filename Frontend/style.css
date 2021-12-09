@@ -1,0 +1,33 @@
+html{
+    font-family: 'M PLUS Code Latin', sans-serif; 
+    background-color: #89CFF0;
+    text-align: center;
+}
+
+head {
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #62e467;
+}
+
+select:hover {
+    background-color: #62e467;
+}
+
+select {
+    background-color: #4CAF50;
+    color: white;
+}

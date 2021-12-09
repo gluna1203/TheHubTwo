@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    p 
+        img(src=joke.image width=250)
+    p Category: #{joke.category} 
+    p Joke: #{joke.jokeString} 
+    p Answer: #{joke.jokeAnswer}
+    br
+    p 
+        a(href='/') Go Back

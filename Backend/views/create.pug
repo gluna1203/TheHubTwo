@@ -1,0 +1,21 @@
+extends layout
+
+block content 
+    form(id='form' method='post' action='/create')
+        label(for='joke') Joke: 
+        input(type="text" name='jokeString')
+        br
+        label(for='jokeAnswer') Answer: 
+        input(type="text" name='jokeAnswer')
+        br
+        label(for='image') Image URL: 
+        input(type="text" name='image')
+        br
+        label(for='category') Category: 
+        select(name='category')
+            //- option(selected=joke.category) #{joke.category}
+            option(value='Bad Pun') Bad Pun
+            option(value='Computer Joke') Computer Joke
+            option(value='Yo Mama Joke') Yo Mama Joke
+        br
+        input(type="submit" value='Add Joke')
